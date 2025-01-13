@@ -5,7 +5,8 @@ const IndexPage = () => {
   return (
     <main style={{ backgroundColor: 'black', margin: '25vh', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <Navigation />
-      <h1 style={{ color: 'white' }}>404</h1>
+      <h1 style={{ color: 'white' }}>Error 404</h1>
+      
     </main>
   )
 }
