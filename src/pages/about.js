@@ -1,17 +1,30 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Navigation from "../components/navigation"
 
-const HomePage = () => {
+const AboutPage = ({ data }) => {
+  const { title, image } = data.contentfulHomePage
+  const imageData = getImage(image)
   return (
     <main style={{ backgroundColor: 'black', margin: '25vh', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <Navigation />
       <h1 style={{ color: 'white' }}>About page</h1>
-      <h2 style={{ color: 'white' }}>Cool info about my portfolio website</h2>
-      <p style={{ color: 'white' }}>Some more text since I have to write something</p>
-      <StaticImage src="../images/icon.png" alt="Random" height={100} />
+      <p style={{ color: 'white' }}>Hello, My name is Theo</p>
+      <GatsbyImage image={imageData} alt={title} style={{ height: 100 }} />
     </main>
   )
 }
 
-export default HomePage
+export const query = graphql`
+  query {
+    contentfulHomePage {
+      title
+      image {
+        gatsbyImageData(layout: CONSTRAINED, width: 100)
+      }
+    }
+  }
+`
+
+export default AboutPage
