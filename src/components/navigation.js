@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Navigation = () => (
   <nav>
     <ul style={{ position: 'sticky', display: 'flex', listStyle: 'none', justifyContent: 'space-around', padding: 20 }}>
-      <li><Link to="/homepage" style={{ color: 'white' }}>Home</Link></li>
+      <li><Link to="/" style={{ color: 'white' }}>Home</Link></li>
       -
       <li><Link to="/about" style={{ color: 'white' }}>About</Link></li>
       -
