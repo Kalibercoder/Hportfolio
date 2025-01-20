@@ -8,7 +8,7 @@ const Heroproject = ({ data }) => {
   const gameGifData = getImage(gamegif)
 
   return (
-    <main style={{ backgroundColor: 'black', margin: '25vh', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
+    <main style={{ backgroundColor: 'black', height: '70vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
       <Navigation />
       <h1 style={{ color: 'white' }}> VampireShooter</h1>
       <h2 style={{ color: 'white' }}> A game where you play as a spacemarine and kill monsters</h2>

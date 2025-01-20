@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
   const imageData = getImage(imagetwo)
 
   return (
-    <main style={{ backgroundColor: 'black', margin: '25vh', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
+    <main style={{ backgroundColor: 'black', height: '70vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
       <Navigation />
       <h1 style={{ color: 'white' }}>Hello</h1>
       <h2 style={{ color: 'white' }}>Welcome to my portfolio</h2>

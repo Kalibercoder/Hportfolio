@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 const ContactPage = ({ data }) => {
   const { github, linkedin, email } = data.contentfulContact
   return (
-    <main style={{ backgroundColor: 'black', margin: '25vh', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
+    <main style={{ backgroundColor: 'black', height: '70vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
       <Navigation />
       <h1 style={{ color: 'white' }}>Contact</h1>
       <p style={{ color: 'white' }}>Email: <a href={`mailto:${email}`} style={{ color: 'white' }}>{email}</a></p>

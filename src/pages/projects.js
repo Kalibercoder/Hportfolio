@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const IndexPage = () => {
     return (
-      <main style={{ backgroundColor: 'black', margin: '0vh', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
+      <main style={{ backgroundColor: 'black', height: '70vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '25px' }}>
         <Navigation />
         <h1 style={{ color: 'white' }}>Projects</h1>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '50vh', overflowY: 'auto'}}>
